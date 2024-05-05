@@ -340,6 +340,9 @@
                   <li>
                     <a href="#list-status-pages" class="toc-h2 toc-link" data-title="List Status Pages">List Status Pages</a>
                   </li>
+                  <li>
+                    <a href="#get-status-page" class="toc-h2 toc-link" data-title="Get Status Page">Get Status Page</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -407,8 +410,7 @@ Content-Type: application/json
 <blockquote>
 <p>API Response:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
     </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="nl">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"K Janeway"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"avatar_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.gravatar.com/avatar/4564674656874"</span><span class="p">,</span><span class="w">
@@ -416,7 +418,6 @@ Content-Type: application/json
     </span><span class="nl">"joined_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-11-15 00:37"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"has_subscription"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
   </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
 </span></code></pre></div>
 <p>This endpoint provides information about the authenticated user.</p>
 <h3 id='http-request'>HTTP Request</h3>
@@ -456,12 +457,38 @@ Content-Type: application/json
     </span><span class="nl">"public_logo_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://app.auramon.xyz/storage/status-pages/1/logo.png"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-17 08:47:15"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-17 08:47:15"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yorktown"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"public_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://probe.app.auramon.xyz"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"public_favicon_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://app.auramon.xyz/images/default-favicon.png"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"public_logo_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://app.auramon.xyz/storage/status-pages/2/logo.png"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-17 09:12:07"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-17 09:12:07"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre></div>
 <p>This endpoint retrieves a list of status pages the user has created.</p>
 <h3 id='http-request'>HTTP Request</h3>
 <p><code>GET /api/status-pages</code></p>
+<h2 id='get-status-page'>Get Status Page</h2>
+<blockquote>
+<p>API Response:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"crossfield"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"public_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://class.app.auramon.xyz"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"public_favicon_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://app.auramon.xyz/images/default-favicon.png"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"public_logo_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://app.auramon.xyz/storage/status-pages/3/logo.png"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-17 04:12:45"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-17 04:12:45"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>This endpoint retrieves a specific status page derived from the id.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET /api/status-pages/{id}</code></p>
 
       </div>
       <div class="dark-box">
