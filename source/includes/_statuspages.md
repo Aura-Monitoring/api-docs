@@ -53,4 +53,12 @@ This endpoint retrieves a specific status page derived from the id.
 
 ### HTTP Request
 
-`GET /api/status-pages/{id}`
+`GET /api/status-pages/{statusPageId}`
+
+## Delete Status Page
+
+This endpoint deletes the status page.
+
+### HTTP Request
+
+`DELETE /api/status-pages/{statusPageId}`
