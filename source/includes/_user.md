@@ -5,7 +5,6 @@
 > API Response:
 
 ```json
-[
   {
     "id": 1,
     "full_name": "K Janeway",
@@ -14,7 +13,6 @@
     "joined_at": "2023-11-15 00:37",
     "has_subscription": true
   }
-]
 ```
 
 This endpoint provides information about the authenticated user.
