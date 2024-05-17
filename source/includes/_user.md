@@ -31,13 +31,15 @@ This endpoint provides information about the authenticated user.
     "id": 1,
     "name": "Janeway's Team",
     "is_personal_team": true,
-    "created_at": "2023-11-15 00:37:36"
+    "created_at": "2023-11-15 00:37:36",
+    "image_url": "https://app.auramon.xyz/storage/teams/1/logo.png"
   },
   {
     "id": 2,
     "name": "Sisko's Team",
     "is_personal_team": false,
-    "created_at": "2024-03-27 11:41:01"
+    "created_at": "2024-03-27 11:41:01",
+    "image_url": "https://app.auramon.xyz/storage/teams/2/logo.png"
   }
 ]
 ```
